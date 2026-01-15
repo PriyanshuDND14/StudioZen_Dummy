@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Zen - Premium Photo & Polaroid Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>STUDIO<span class="zen">Zen</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="order-btn">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Capture Your Moments in <span class="highlight">Style</span></h1>
+                <p>Premium photo printing and custom polaroid designs that bring your memories to life</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn-primary">View Products</a>
+                    <a href="#gallery" class="btn-secondary">See Gallery</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="polaroid-stack">
+                    <div class="polaroid polaroid-1">
+                        <div class="photo-placeholder"></div>
+                    </div>
+                    <div class="polaroid polaroid-2">
+                        <div class="photo-placeholder"></div>
+                    </div>
+                    <div class="polaroid polaroid-3">
+                        <div class="photo-placeholder"></div>
+                    </div>
+                </div>
+                <div class="camera-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Mini Polaroids</h3>
+                    <p>Instant mini polaroid prints perfect for memories and gifts</p>
+                    <div class="price">Starting at $2.99</div>
+                    <button class="btn-product">Select Design</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Photostrips</h3>
+                    <p>Classic photo booth style strips with custom layouts</p>
+                    <div class="price">Starting at $4.99</div>
+                    <button class="btn-product">Select Design</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>A4 Posters</h3>
+                    <p>High-quality A4 poster prints for your favorite photos</p>
+                    <div class="price">Starting at $8.99</div>
+                    <button class="btn-product">Select Design</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Polaroids</h3>
+                    <p>Classic polaroid format with vintage charm</p>
+                    <div class="price">Starting at $3.99</div>
+                    <button class="btn-product">Select Design</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-mail-bulk"></i>
+                    </div>
+                    <h3>Postcards</h3>
+                    <p>Custom postcards perfect for sharing memories</p>
+                    <div class="price">Starting at $1.99</div>
+                    <button class="btn-product">Select Design</button>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- 
+Design Menu Section -->
+    <section id="design-menu" class="design-menu">
+        <div class="container">
+            <h2 class="section-title">Choose Your Design</h2>
+            <div class="design-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="vintage">Vintage</button>
+                    <button class="tab-btn" data-category="modern">Modern</button>
+                    <button class="tab-btn" data-category="artistic">Artistic</button>
+                    <button class="tab-btn" data-category="minimal">Minimal</button>
+                </div>
+                <div class="designs-grid">
+                    <div class="design-item" data-category="vintage">
+                        <div class="design-preview vintage-1"></div>
+                        <h4>Retro Film</h4>
+                        <p>Classic film border with vintage colors</p>
+                    </div>
+                    <div class="design-item" data-category="vintage">
+                        <div class="design-preview vintage-2"></div>
+                        <h4>Old School</h4>
+                        <p>Nostalgic design with aged effects</p>
+                    </div>
+                    <div class="design-item" data-category="modern">
+                        <div class="design-preview modern-1"></div>
+                        <h4>Clean Lines</h4>
+                        <p>Contemporary design with sharp edges</p>
+                    </div>
+                    <div class="design-item" data-category="modern">
+                        <div class="design-preview modern-2"></div>
+                        <h4>Gradient Pop</h4>
+                        <p>Modern gradients and vibrant colors</p>
+                    </div>
+                    <div class="design-item" data-category="artistic">
+                        <div class="design-preview artistic-1"></div>
+                        <h4>Watercolor</h4>
+                        <p>Artistic watercolor border effects</p>
+                    </div>
+                    <div class="design-item" data-category="minimal">
+                        <div class="design-preview minimal-1"></div>
+                        <h4>Pure White</h4>
+                        <p>Clean minimal white border</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Process Section -->
+    <section id="order" class="order-process">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h3>Upload Photos</h3>
+                    <p>Upload your favorite photos from your device</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Choose Design</h3>
+                    <p>Select from our curated design templates</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>We Print It</h3>
+                    <p>High-quality printing with premium materials</p>
+                </div>
+            </div>
+            
+            <!-- Order Form -->
+            <div class="order-form-container">
+                <form class="order-form">
+                    <h3>Start Your Order</h3>
+                    <div class="form-group">
+                        <label>Product Type</label>
+                        <select name="product" required>
+                            <option value="">Select Product</option>
+                            <option value="mini-polaroids">Mini Polaroids</option>
+                            <option value="photostrips">Photostrips</option>
+                            <option value="a4-posters">A4 Posters</option>
+                            <option value="polaroids">Polaroids</option>
+                            <option value="postcards">Postcards</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Design Category</label>
+                        <select name="design" required>
+                            <option value="">Select Design</option>
+                            <option value="vintage">Vintage</option>
+                            <option value="modern">Modern</option>
+                            <option value="artistic">Artistic</option>
+                            <option value="minimal">Minimal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantity</label>
+                        <input type="number" name="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Photos</label>
+                        <div class="file-upload">
+                            <input type="file" id="photos" name="photos" multiple accept="image/*" required>
+                            <label for="photos" class="file-upload-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Click to upload or drag photos here</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Information</label>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Instructions</label>
+                        <textarea name="instructions" placeholder="Any special requests or notes..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Studio Zen</h2>
+                    <p>At Studio Zen, we believe every photo tells a story worth preserving. Our premium printing services combine traditional craftsmanship with modern technology to create beautiful, lasting memories.</p>
+                    <p>Located in front of CFC, our Studio Zen stall offers personalized service and quick turnaround times for all your photo printing needs.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Materials</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast Turnaround Time</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom Design Options</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Our Stall</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>In Front of CFC | Studio Zen Stall</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 9AM-8PM<br>Sunday: 10AM-6PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@studiozen.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>STUDIO<span class="zen">Zen</span></h3>
+                    <p>Premium photo printing and polaroid services that capture your memories in style.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Mini Polaroids</a></li>
+                        <li><a href="#">Photostrips</a></li>
+                        <li><a href="#">A4 Posters</a></li>
+                        <li><a href="#">Postcards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Custom Designs</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Express Printing</a></li>
+                        <li><a href="#">Photo Restoration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Studio Zen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
